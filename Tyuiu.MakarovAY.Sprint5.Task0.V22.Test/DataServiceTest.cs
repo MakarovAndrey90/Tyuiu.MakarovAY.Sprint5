@@ -10,7 +10,7 @@ namespace Tyuiu.MakarovAY.Sprint5.Task0.V22.Test
             DataService ds = new DataService();
             string path = ds.SaveToFileTextData(3); // Получаем реальный путь из Temp папки
 
-            FileInfo fileInfo = new FileInfo(path); // Используем этот путь.
+            FileInfo fileInfo = new FileInfo(path); // Используем этот путь
             bool fileExistst = fileInfo.Exists;
             bool wait = true;
             Assert.AreEqual(wait, fileExistst);
