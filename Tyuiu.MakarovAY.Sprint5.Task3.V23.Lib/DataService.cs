@@ -10,6 +10,7 @@ namespace Tyuiu.MakarovAY.Sprint5.Task3.V23.Lib
         {
             string path = Path.GetTempFileName();
             double z = (1 + Math.Pow((double)x, 3)) / Math.Pow((double)x, 2);
+            z = Math.Round(z, 3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
                 writer.Write(BitConverter.GetBytes(z));
