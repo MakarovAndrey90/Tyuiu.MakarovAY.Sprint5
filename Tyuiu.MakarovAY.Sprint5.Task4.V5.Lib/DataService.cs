@@ -10,7 +10,7 @@ namespace Tyuiu.MakarovAY.Sprint5.Task4.V5.Lib
         {
             string r = File.ReadAllText(path);
             double x = double.Parse(r, CultureInfo.InvariantCulture);
-            double res = Math.Round((4.26 * x) / Math.Sin(x), 2);
+            double res = Math.Round((4.26 * x) / Math.Sin(x), 3);
             return res;
         }
     }
