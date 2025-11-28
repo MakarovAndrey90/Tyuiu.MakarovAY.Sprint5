@@ -13,7 +13,7 @@ namespace Tyuiu.MakarovAY.Sprint5.Task6.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    line = line.Replace(",", "");
+                    line = line.Replace(",", "").Replace(".", "");
                     string[] words = line.Split(" ");
                     foreach (string word in words)
                     {
